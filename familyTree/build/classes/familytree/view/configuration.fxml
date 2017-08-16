@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="332.0" prefWidth="486.0" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="familytree.controller.ConfigurationController">
+   <children>
+      <PasswordField fx:id="oldPass" layoutX="113.0" layoutY="78.0" prefHeight="25.0" prefWidth="310.0" promptText="Ancien password*" styleClass="textField" />
+      <PasswordField fx:id="newPass" layoutX="113.0" layoutY="139.0" prefHeight="25.0" prefWidth="310.0" promptText="Nouveau password*" styleClass="textField" />
+      <PasswordField fx:id="newPassConfirmation" layoutX="113.0" layoutY="197.0" prefHeight="25.0" prefWidth="310.0" promptText="confirmation*" styleClass="textField" />
+      <Label layoutX="113.0" layoutY="51.0" text="Ancien Mot de Passe" textFill="WHITE" />
+      <Label layoutX="113.0" layoutY="122.0" text="Nouveau Mot de Passe" textFill="WHITE" />
+      <Label layoutX="113.0" layoutY="180.0" text="Retaper le Mot de Passe" textFill="WHITE" />
+      <Button fx:id="btnValider" layoutX="236.0" layoutY="293.0" mnemonicParsing="false" onAction="#validerButtonAction" prefHeight="17.0" prefWidth="81.0" styleClass="Okbutton" text="Valider" AnchorPane.bottomAnchor="14.0" />
+      <Button fx:id="btnAnnuler" layoutX="341.0" layoutY="293.0" mnemonicParsing="false" onAction="#annulerButtonAction" prefHeight="17.0" prefWidth="81.0" text="Annuler" AnchorPane.bottomAnchor="14.0" />
+      <Label layoutX="113.0" layoutY="237.0" prefHeight="17.0" prefWidth="257.0" text="Note: Rentenir  trés bien votre mot de passe." textFill="WHITE" />
+      <Label fx:id="message" alignment="CENTER" contentDisplay="TOP" layoutX="179.0" layoutY="14.0" prefHeight="25.0" prefWidth="179.0" textFill="#cfe82e" />
+   </children>
+</AnchorPane>

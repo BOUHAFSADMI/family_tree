@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="background" prefHeight="635.0" prefWidth="1022.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="familytree.controller.AppController">
+    <top>
+      <VBox>
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Fichier">
+                  <items>
+                    <MenuItem fx:id="ajouterItem" mnemonicParsing="false" onAction="#ajouterButtonAction" text="Ajouter" />
+                        <MenuItem fx:id="sortirItem" mnemonicParsing="false" onAction="#sortirButtonAction" text="Sortir" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edition">
+                  <items>
+                    <MenuItem fx:id="modifierItem" mnemonicParsing="false" onAction="#modifierButtonAction" text="Modifier" />
+                        <MenuItem fx:id="supprimerItem" mnemonicParsing="false" onAction="#supprimerButtonAction" text="Supprimer" />
+                        <MenuItem fx:id="configurerItem" mnemonicParsing="false" onAction="#configurerButtonAction" text="Configurer" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Aide">
+                  <items>
+                    <MenuItem fx:id="aboutItem" mnemonicParsing="false" onAction="#aboutItemAction" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+              <ToolBar stylesheets="@style.css">
+                  <items>
+                      <Region prefHeight="39.0" prefWidth="245.0" styleClass="spacer" />
+                      <HBox styleClass="segmented-button-bar" stylesheets="@style.css">
+                         <children>
+                             <Button fx:id="btnAjouter" onAction="#ajouterButtonAction" styleClass="first" text="Ajouter" />
+                             <Button fx:id="modifier" onAction="#modifierButtonAction" text="Modifier" />
+                             <Button fx:id="supprimer" onAction="#supprimerButtonAction" text="Supprimer" />
+                             <Button fx:id="configurer" onAction="#configurerButtonAction" text="Configuration" />
+                             <Button fx:id="sortir" onAction="#sortirButtonAction" styleClass="last" text="Sortir" />
+                         </children>
+                      </HBox>
+                  </items>
+              </ToolBar>
+         </children>
+      </VBox>
+    </top>
+</BorderPane>

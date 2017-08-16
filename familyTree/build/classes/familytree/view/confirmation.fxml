@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="193.0" prefWidth="579.0" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="familytree.controller.ConfirmationController">
+   <children>
+      <Button layoutX="367.0" layoutY="135.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" styleClass="Okbutton" text="Supprimer" onAction="#deleteButtonOnAction"  />
+      <Button layoutX="458.0" layoutY="135.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="77.0" text="Annuler" onAction="#cancelButtonOnAction"  />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="181.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voulez vous vraiment supprimer la personne sélectionner?">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="168.0" fitWidth="177.0" layoutX="4.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/delete-caution.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

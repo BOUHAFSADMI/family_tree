@@ -1,0 +1,33 @@
+.searchField{
+    -fx-background-radius: 10;
+    -fx-text-fill: #6d6d6d;
+    -fx-prompt-text-fill: #797979;
+    -fx-highlight-fill: #dee3c0;
+    -fx-highlight-text-fill: #333;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right center;
+    -fx-background-image: url("../img/icon/search.png");
+}
+
+.Okbutton{
+    -fx-background-radius: 10px;
+    -fx-background-color: #3d80c1;
+    -fx-text-fill: #fff;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-border-radius: 0;
+    -fx-content-display: right;
+    -fx-cursor: hand;
+}
+
+.button{
+    -fx-background-radius: 10px;
+    -fx-text-fill: #fff;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-border-radius: 0;
+    -fx-content-display: right;
+    -fx-cursor: hand;
+}

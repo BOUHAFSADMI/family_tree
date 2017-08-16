@@ -1,0 +1,45 @@
+CREATE TABLE login(
+loginID integer primary key autoincrement,
+username varchar(25),
+password varchar(25)
+);
+
+CREATE TABLE wedding(
+maleID int,
+femaleID int,
+weddingDate date,
+primary key(maleID,femaleID),
+foreign key(maleID) references person(personID)
+on delete cascade on update cascade,
+foreign key(femaleID) references person(personID)
+on delete cascade on update cascade
+);
+
+CREATE TABLE feeding(
+personID  int,
+fatherID int,
+motherID int,
+primary key(personID,fatherID,motherID ),
+foreign key(personID) references person(personID)
+on delete cascade on update cascade,
+foreign key(motherID) references person(personID)
+on delete cascade on update cascade,
+foreign key(fatherID) references person(personID)
+on delete cascade on update cascade
+);
+
+CREATE TABLE person(
+personID integer primary key autoincrement,
+lastName varchar(25),
+name varchar(25) ,
+sexe char(1),
+birth date,
+place varchar(25),
+image blob,
+fatherID int default 0,
+motherID int default 0, 
+foreign key(fatherID) references person(personID)
+on delete set default on update cascade,
+foreign key(motherID) references person(personID)
+on delete set default on update cascade
+);

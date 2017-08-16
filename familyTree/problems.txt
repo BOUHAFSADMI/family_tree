@@ -1,0 +1,3 @@
+*parse date in Add new Person
+*Sortir Bug
+*Modifier still not working

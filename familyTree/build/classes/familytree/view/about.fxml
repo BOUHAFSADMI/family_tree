@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="324.0" prefWidth="432.0" style="-fx-background-color: #2B2B2B;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="WHITE" layoutX="55.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="     FamilyTree est une petite  application concever et dévellopper(utilisant JavaFX(8) et sqlite3 en été de 2015 par l'étudiant en école supérieure d'informatiqueBOUHAFS Sadmi à la demande de BOUHAFS Salim." wrappingWidth="321.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="55.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:                                                     ds_bouhafs@esi.dz ou                                              sadmibouhafs@gmail.com" wrappingWidth="341.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

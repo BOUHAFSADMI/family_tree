@@ -1,0 +1,47 @@
+.textField{
+    -fx-background-radius: 10;
+    -fx-text-fill: #6d6d6d;
+    -fx-prompt-text-fill: #797979;
+    -fx-highlight-fill: #dee3c0;
+    -fx-highlight-text-fill: #333;
+}
+
+#background {
+    -light-black: rgb(74, 75, 78);
+    -dark-highlight: rgb(87, 89, 92);
+    -dark-black: rgb(39, 40, 40);
+    -darkest-black: rgb(5, 5, 5);
+    -mid-gray: rgb(216, 222, 227);
+    -fx-background-color: #2B2B2B;
+}
+
+
+.Okbutton{
+    -fx-background-radius: 10px;
+    -fx-background-color: #3d80c1;
+    -fx-text-fill: #fff;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-border-radius: 0;
+    -fx-content-display: right;
+    -fx-cursor: hand;
+}
+
+.button{
+    -fx-background-radius: 10px;
+    -fx-text-fill: #fff;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-border-radius: 0;
+    -fx-content-display: right;
+    -fx-cursor: hand;
+}
+
+
+.text-field.error {
+  -fx-text-box-border: red ;
+  -fx-focus-color: red ;
+}
+ 

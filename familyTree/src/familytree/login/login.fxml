@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="1001.0" styleClass="background" stylesheets="@loginStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="familytree.controller.LoginController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="570.0" prefWidth="1000.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/tree.png" />
+               </image>
+            </ImageView>
+                  <AnchorPane maxHeight="298.0" maxWidth="369.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="298.0" prefWidth="369.0" styleClass="middlePane" stylesheets="@loginStyle.css">
+                     <children>
+                        <PasswordField fx:id="password" layoutX="55.0" layoutY="197.0" prefHeight="30.0" prefWidth="261.0" promptText="Password">
+                           <styleClass>
+                              <String fx:value="pass" />
+                              <String fx:value="pass" />
+                           </styleClass>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                        </PasswordField>
+                        <TextField fx:id="username" layoutX="55.0" layoutY="143.0" prefHeight="30.0" prefWidth="261.0" promptText="Username" styleClass="name">
+                     <font>
+                        <Font name="System" size="14.0" />
+                     </font></TextField>
+                        <Button fx:id="btnLogin" layoutX="55.0" layoutY="253.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="30.0" prefWidth="261.0" styleClass="loginButton" text="LOGIN">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                  <Label fx:id="message" alignment="CENTER" layoutX="121.0" layoutY="121.0" prefHeight="17.0" prefWidth="137.0" textFill="#e0eb12" />
+                        <ImageView fitHeight="121.0" fitWidth="138.0" layoutX="121.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/person.png" />
+                           </image>
+                           <effect>
+                              <Glow />
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            <Label prefHeight="20.0" prefWidth="197.0" text="CopyRight (c) BOUHAFS 2016">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>            
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
